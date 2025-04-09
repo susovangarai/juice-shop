@@ -3,5 +3,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"  # location of package.json
     schedule:
-      interval: "weekly"
+      interval: "weekly"  # or "daily", "monthly"
+    allow:
+      - dependency-type: "all"
     open-pull-requests-limit: 5
